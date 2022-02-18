@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar" id="nav">
+        <div class="logo">
+            <img src="kklogo.jpg" alt="">
+        </div>
+        <div class="navlinks" id="links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Survice</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menu">
+            <div id="line1"></div>
+            <div id="line2"></div>
+        </div>
+    </div>
+    <section class="sec0" id="home">
+        <div class="container">
+            <div class="content" id="con">
+            <h1>Wellcome to my world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est, enim ipsa aperiam sunt voluptates!</p>
+            <a href="">Contact</a>
+        </div>
+        </div>
+
+    </section>
+
+    
+   
+
+    <script>
+       var con = document.getElementById('con')
+       var menu = document.getElementById('menu')
+       var nav = document.getElementById('nav')
+       var links = document.getElementById('links')
+     
+       window.addEventListener('DOMContentLoaded' , () => {
+           con.classList.toggle('active')
+       })
+       menu.addEventListener('click' , () => {
+           links.classList.toggle('active3')
+           nav.classList.toggle('active2')
+          
+       })
+       links.addEventListener('click' , () => {
+           links.classList.remove('active3' )
+           nav.classList.toggle('active2')
+       })
+
+    </script>
+
+</body>
+</html>
